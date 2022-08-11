@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <title>WillSkill</title>
 </head>
 
@@ -19,7 +21,18 @@
 
         <div class="header__container container">
 
+
+
             <div class="header__logo">
+
+                <div class="header__burger" id="burger">
+                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H25V2H0V0Z" fill="white" />
+                        <path d="M0 6H25V8H0V6Z" fill="white" />
+                        <path d="M0 12H25V14H0V12Z" fill="white" />
+                    </svg>
+
+                </div>
                 <a href="#" class="header__logo_pic">
                     <img src="assets/logo.png" alt="logo">
                 </a>
@@ -56,6 +69,26 @@
 
         </div>
 
+
+        <nav class="header__mobile" id="mobileMenu">
+            <ul>
+                <div class="header__mobile_close" id="closeMenu">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.7313 0.268722C19.373 -0.0895736 18.7921 -0.0895742 18.4338 0.268721L10 8.70249L1.56623 0.268721C1.20793 -0.0895742 0.627021 -0.0895736 0.268726 0.268722C-0.0895697 0.627018 -0.0895699 1.20793 0.268726 1.56623L8.70249 10L0.268722 18.4338C-0.089574 18.7921 -0.0895738 19.373 0.268722 19.7313C0.627017 20.0896 1.20793 20.0896 1.56622 19.7313L10 11.2975L18.4338 19.7313C18.7921 20.0896 19.373 20.0896 19.7313 19.7313C20.0896 19.373 20.0896 18.7921 19.7313 18.4338L11.2975 10L19.7313 1.56623C20.0896 1.20793 20.0896 0.627018 19.7313 0.268722Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Возврат</a></li>
+                <li><a href="#">Исследования</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="tel:+78006000990">8 (800) 600-09-90</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <section class="banner">
@@ -68,8 +101,8 @@
                     ИММУНИТЕТ!</h2>
             </div>
             <div class="banner__description">
-                Всего пять секунд в день помогут укрепить иммунитет
-                и повысить защитные силы организма
+                <span> Всего пять секунд в день помогут укрепить иммунитет
+                    и повысить защитные силы организма </span>
             </div>
             <div class="banner__expl">
                 <div class="banner__expl_title">
@@ -101,7 +134,7 @@
                 <span class="actual">690₽</span>
             </div>
 
-            <div class="offer__content">
+            <div class="offer__content" id="offerSlider">
                 <div class="offer__content_card offer-card">
                     <div class="offer-card__picture">
                         <img src="assets/cards/ginger.png" alt="">
@@ -140,6 +173,11 @@
 
     </section>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="src/js/header.js"></script>
+    <script src="src/js/sliderSettings.js"></script>
 </body>
 
 </html>
